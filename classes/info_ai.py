@@ -17,6 +17,6 @@ def read_ai_profile(file_path):
     
 file_path = 'ai_profile.json'
 
-# Call the function to read the uer profile
+# Call the function to read the user profile
 ai_profile = read_ai_profile(file_path)
 
