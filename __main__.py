@@ -47,6 +47,16 @@
         
 """
 
+def create_friend():
+    print('Sex :')
+    print('Name :')
+    print('Height :')
+    print('Body Type :')
+    print('Skin Tone : ')
+    print('Eye Color :')
+    print('Hair Color :')
+    print('Ethnicity :')
+    print('Language :')
 
 import speech_recognition as sr 
 import pyttsx3 
