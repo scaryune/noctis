@@ -10,3 +10,11 @@ class ai():
         self.stamina = stamina
         self.hungry = hungry
         self.infection = infection 
+
+def get_descriptive_information(self):
+    """ Retrun a neatly formatted descriptive information of the ai. """
+
+
+def update_information(self):
+    """ Update information of the AI """
+

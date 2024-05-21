@@ -8,6 +8,19 @@
     * Mood
     * Skills
     * Optional Traits
+        
+        HEIGHT    <>
+        BODY TYPE <>
+        FACE TYPE <>
+        SKIN TONE <>
+        EYE COLOR <>
+        LIP COLOR <>
+        HAIR COLOR <>
+        ETHNICITY <>
+        LANGUAGE <>
+    
+        NOCTIS EMANATOR DETECTED
+        CONNECT
 
     * What libraries will i need ?
         - Speech Recognition
@@ -31,6 +44,7 @@
     * Create json file or data strutcture file to save the data. 
         - Study how to implement json file or data structure file to save all Ai data 
         - Ai need to be able to recognize is friend 
+        
 """
 
 
