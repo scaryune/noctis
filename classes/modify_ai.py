@@ -6,16 +6,19 @@ def modify_ai(file_path, modifier, value):
 
         print('Ai profile loaded :')
         for key, value in ai_profile.items():
-            print(f'{key}:{value}')
+            print(f'{key}: {value}')
     
     if modifier in ai_profile :
-       ai_profile[modifier] = value
+       ai_profile[modifier] = value 
     else:
         print(f'Key "{modifier}" not found in the AI profile')
 
-    with open('ai_profile.json', 'w') as json_file:
+    with open(file_path, 'w') as json_file:
         json.dump(ai_profile, json_file, indent=4)
-        print('\n Ai profile has updated with sucess ')
+        print('\n Ai profile has updated with sucess')
+    print('\n Modified User Profile:')
+    for key, value in ai_profile.items():
+        print(f'{key}:{value}')
 
 modifier = input('what key you want change :')
 value = input('Insert the value :')
