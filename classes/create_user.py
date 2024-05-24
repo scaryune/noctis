@@ -14,9 +14,9 @@ def create_user():
     language= input('Language :')
 
     user_profile = {
-            'sex' : sex,
-            'name' : name,
-            'height' : height, 
+            'Sex' : sex,
+            'Name' : name,
+            'Height' : height, 
             'Body Type' : body_type,
             'Skin Tone': skin_tone,
             'Eye Color' : eye_color,
@@ -29,7 +29,7 @@ def create_user():
     for key, value in user_profile.items():
         print(f'{key}: {value}')
 
-        with open('user_profile.josn', 'w') as json_file:
+        with open('user_profile.json', 'w') as json_file:
             json.dump(user_profile, json_file, indent=4)
             print('\nUser profile has been created to user_profile.json')
 
