@@ -24,5 +24,5 @@ def ai_profile():
 # Prompt the user for input
 file_path = 'ai_profile.json'
 user_path = 'user_profile.json'
-name = 'name'
+name = 'Name'
 ai_profile()

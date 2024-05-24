@@ -48,50 +48,22 @@
     speech to text (transcription) > language model > text to speech > speech to talking head > talking head to unreal metahuman > to robot
 """
 
-def create_friend():
-    print('Sex :')
-    print('Name :')
-    print('Height :')
-    print('Body Type :')
-    print('Skin Tone : ')
-    print('Eye Color :')
-    print('Hair Color :')
-    print('Ethnicity :')
-    print('Language :')
-
-import speech_recognition as sr 
 import pyttsx3 
-from transformers import pipeline
+engine = pyttsx3.init()
+voices = engine.getProperty('voices')
+# Voice[0] = male Voice[1] = female
+engine.setProperty('voice', voices[1])
 
-recognizer = sr.Recognitizer()
-tts_engine = psttsx3.init()
 
+def speak(audio):
+    engine.say(audio)
+    engine.runAndWait()
 
-
+if __main__ = "__main__":
+    speak("Hello World")
+    for i in voices:
+        print(i.name)
 def __main__():
-    print("Hi I am , your friend. How was your day today?")
-    speak("Hi I am , your friend. How was your day today?")
-
-    while True:
-        comamnd = listen()
-        if comamnd.owwer() in ['exit', 'quit', 'goodbye']:
-        print('Goodbye!')
-        speak('Goodbye!')
-        break
-    elif command:
-        respond_to_command(comamnd)
-
-
-def listen():
-
-
-
-
-def speak():
-
-
-
-def respond_to_command():
 
 
 
