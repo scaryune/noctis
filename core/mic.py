@@ -46,7 +46,7 @@ def record_audio(audio_queue,energy, pause, dynamic_energy, save_file, temp_dir)
             audio = r.listen(source)
             if save_file:
                 data = io.BytesIO(audio.get_wave_data())
-                audio_clip = AudioSegment.from_file(data)
+                audio_clip = AudioSegment.from_file(data):
                 filename = os.path.join(temp_dir, f"temp{i}.wav")
                 audio_data = filename 
             else:
@@ -72,7 +72,6 @@ def transcribe_forever(audio_queue, result_queue, audio_model, english, verbose,
             result_queue.put_nowait(result)
 
         if save_file:
-            os.remove(audio_data)
-
+            os.remove(audio_data)()
 
 main()
