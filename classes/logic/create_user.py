@@ -11,8 +11,8 @@ def create_user():
     eye_color = input('Eye Color :')
     hair_color = input('Hair Color :')
     ethnicity = input('Ethnicity :')
-    language= input('Language :')
-
+    language= input('Language :') 
+            
     user_profile = {
             'Sex' : sex,
             'Name' : name,
